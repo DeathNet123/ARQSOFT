@@ -1,0 +1,74 @@
+.side_by_side
+{
+    display: flex;
+    flex-direction: row;
+    padding: relative;
+    height: 60%;
+}
+.side_by_side>figure
+{
+    width: 60%;
+    position: fixed;
+    right: 2%;
+    top:0;
+    z-index: -1;
+}
+#pic_side
+{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#pic_side h1
+{
+    font-size: 5em;
+    font-family: "Helvetica Neue", "Helvetica";
+}
+#pic_side span
+{
+    font-size: 1.7em;
+    font-style: italic;
+    font-family: "times new roman";
+    color: var(--silver);
+}
+#pic_side div
+{
+    position: relative;
+    top: 20%;
+}
+#main_photo img 
+{
+    width: 100%;
+}
+#arrow
+{
+    position: relative;
+    width: 2%;
+    margin-top: 20%;
+    height: 10%;
+    left: 20%;
+}
+#arrow img
+{
+    width: 100%;
+}
+#about
+{
+    margin-top: 0;
+    padding: 10%;
+    text-align: center;
+    background-color:white;
+}
+#about p
+{
+    line-height: 1.6em;
+}
+#about h1
+{
+    font-size: 2em;
+    margin-bottom: 2%;
+    font-family: "Poppins", "sans-serif";
+}
+

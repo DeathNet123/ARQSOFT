@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
+:root
+{
+    --main-bg-color: #ffffff;
+    --header-bg-color: #ffffff;
+    --onhover-bg-color: #c0c0c0;
+    --font-color: #000000;
+    --nav-color: #ffffff;
+    /*silver pallete..*/
+    --silver:#848484;
+    --little-dark-scrollbar:#C0C0C0;
+        /*#F5F5F5
+        #FFAC67
+        #FFFFFF	*/
+    /*--progress-bar-color: #895668;
+    --progress-label-color: #1491c2;
+    --progress-bg-color: #ccc;*/
+}
+
+/* width */
+body::-webkit-scrollbar 
+{
+    width: 11px;
+}
+  
+  /* Track */
+body::-webkit-scrollbar-track 
+{
+    background: #f5f5f5; 
+}
+   
+  /* Handle */
+body::-webkit-scrollbar-thumb 
+{
+    background: var(--little-dark-scrollbar); 
+}
+  
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover 
+{
+    background: var(--silver); 
+}
+
+ html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: var(--main-bg-color);
+    padding:0;
+    margin:0;
+    width:100%;
+    font-size:100%;
+    font-family: "Poppins", "times New Roman", "sans-serif";
+}
+header
+{
+    background-color: var(--header-bg-color);
+    width: 99%;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+}
+header figure
+{
+    width: 18%;
+    left:2%;
+    position: relative;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s eas;
+    -moz-transition: all 1s eas;
+    -ms-transition: all 1s eas;
+    -o-transition: all 1s eas;
+}
+header figure:hover
+{
+    width: 25%;
+    cursor: pointer;
+}
+
+header figure img
+{
+    width: 100%;
+
+}
+header>nav
+{   
+    flex-grow: 5;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+}
+.container
+{
+    position: relative;
+    width: 10%;
+    height: 50%;
+    top: 45%;
+    text-align: center;
+    left:50%;
+    margin: 0;
+}
+.hidden
+{
+    position: absolute;
+    display:block;
+    left: -60%;
+    background-color: var(--little-dark-scrollbar);
+    visibility: hidden;
+    width: 200%;
+    margin-top:4.5%;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    opacity: 0.4;
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;   
+}
+.hidden a
+{
+    display: block;
+    padding: 5%;
+
+}
+.hidden a, .container a
+{
+    text-decoration: none;
+    display:block;
+    width: 100%;
+    color: black;
+    font-family: "Poppins", "time new Roman", "sans-serif";
+}
+.container:hover .hidden
+{
+    visibility: visible;
+}
+.hidden:hover
+{
+    visibility: visible;
+}
+footer
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f5f5;
+    padding: 2%;;
+}
+
+#contact
+{
+    font-family: "time new Roman", "sans-serif";
+    text-align:  left;
+    width: 33%;
+
+}
+#contact>h1
+{
+    font-size: 2em;
+    font-family: "Poppins";
+    font-weight:bold;
+}
+
+#social
+{
+    width: 33%;
+    font-family: "Poppins";
+}
+footer form
+{
+    width: 33%;
+}
+footer form input, textarea
+{
+    border: none;
+    width : 87%;
+    margin-top: 6%;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid black;
+}
+footer form input
+{
+    width : 40%;
+    padding : 2%;
+
+}
+#emai
+{
+    margin-left: 5%;
+}
+footer form input:focus, textarea:focus
+{
+    outline: none;
+}
+footer form button
+{
+    margin-top: 1%;
+    padding: 2%;
+    width : 30%;
+    background-color: black;
+    color: white;
+    border: none;
+    position: relative;
+    right: 0;
+}
+footer form button:hover
+{
+    cursor: pointer;
+}
+.icons_holder
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 80%;
+}
+.icons_holder a
+{
+    text-decoration: none;
+}
+.twitter
+{
+    color: #1b7cd8;
+}
+.github
+{
+    color: #000000;
+    margin-top: 1.5%;
+}
+.facebook
+{
+    margin-top: 1.5%;
+    color: #09287c;
+}
+.instagram
+{
+    margin-top: 1.5%;
+    color: #854b4b;
+}
+.stack
+{
+    margin-top: 1.5%;
+    color: #d66b13;
+}
+
+@media only screen and (max-width: 1200px)
+{
+    #desktop_nav
+    {
+        display: none;
+    }
+    header figure
+    {
+        margin: auto;
+        width: 60%;
+    }
+    header
+    {
+        
+    }
+    #main_photo
+    {
+        display: none;
+    }
+
+    footer
+    {
+        flex-direction: column;
+    }
+    #contact
+    {
+        text-align: center;
+        width: 100%;
+        font-size:2em;
+    }
+
+    #social
+    {
+        text-align: center;
+        width: 100%;
+        font-size:2em;
+        padding-top: 10%;
+
+    }
+    #social div
+    {
+
+        left: 5%;
+    }
+    footer form
+    {
+        padding-top: 10%;
+        text-align: center;
+        width: 100%;
+    }
+    form
+    {
+        font-size:3em;
+    }
+
+    form  input
+    {
+        font-size: 1.2em;
+    }
+    form textarea
+    {
+        font-size:1.5em;
+    }
+
+    #cane
+    {
+        width: 60%;
+        font-size: 1em;
+        margin-top: 3%;
+    }
+    /*Tablets [601px -> 1200px]*/
+}
