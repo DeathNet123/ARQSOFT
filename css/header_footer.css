@@ -16,7 +16,6 @@
     --progress-label-color: #1491c2;
     --progress-bg-color: #ccc;*/
 }
-
 /* width */
 body::-webkit-scrollbar 
 {
@@ -64,6 +63,10 @@ header
     display: flex;
     flex-direction: row;
 }
+#mobile_nav
+{
+    display: none;
+}
 header figure
 {
     width: 18%;
@@ -74,6 +77,10 @@ header figure
     -moz-transition: all 1s eas;
     -ms-transition: all 1s eas;
     -o-transition: all 1s eas;
+}
+#list
+{
+    display: none;
 }
 header figure:hover
 {
@@ -97,7 +104,6 @@ header>nav
 {
     position: relative;
     width: 10%;
-    height: 50%;
     top: 45%;
     text-align: center;
     left:50%;
@@ -107,13 +113,13 @@ header>nav
 {
     position: absolute;
     display:block;
-    left: -60%;
-    background-color: var(--little-dark-scrollbar);
+    left: -50%;
+    background-color: #ffffff;
     visibility: hidden;
     width: 200%;
+    z-index: 100;
     margin-top:4.5%;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    opacity: 0.4;
     border-radius: 2%;
     -webkit-border-radius: 2%;
     -moz-border-radius: 2%;
@@ -255,15 +261,8 @@ footer form button:hover
     header figure
     {
         margin: auto;
+        left: -5%;
         width: 60%;
-    }
-    header
-    {
-        
-    }
-    #main_photo
-    {
-        display: none;
     }
 
     footer
@@ -274,14 +273,14 @@ footer form button:hover
     {
         text-align: center;
         width: 100%;
-        font-size:2em;
+        font-size:1.7em;
     }
 
     #social
     {
         text-align: center;
         width: 100%;
-        font-size:2em;
+        font-size:1.7em;
         padding-top: 10%;
 
     }
@@ -298,16 +297,16 @@ footer form button:hover
     }
     form
     {
-        font-size:3em;
+        font-size:2.7em;
     }
 
     form  input
     {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     form textarea
     {
-        font-size:1.5em;
+        font-size:1em;
     }
 
     #cane
@@ -315,6 +314,48 @@ footer form button:hover
         width: 60%;
         font-size: 1em;
         margin-top: 3%;
+    }
+
+    #list img
+    {
+        width: 100%;
+    }
+    #list
+    {
+        display: block;
+        width: 8%;
+        margin: 0 auto 0 0;
+        align-self: flex-end;
+        position: relative;
+        left: 1%;
+        border-radius: 10%;
+        border: 1px solid black;
+        -webkit-border-radius: 10%;
+        -moz-border-radius: 10%;
+        -ms-border-radius: 10%;
+        -o-border-radius: 10%;
+    }
+    #mobile_nav
+    {
+        display: none;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #f5f5f5;
+    }
+    .container
+    {
+        left: 0;
+        margin: auto;
+        font-size: 2em;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }   
+    header
+    {
+        z-index: 100;
+        position: sticky;
+        top: 0;
     }
     /*Tablets [601px -> 1200px]*/
 }

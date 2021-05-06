@@ -1,9 +1,6 @@
 .side_by_side
 {
-    display: flex;
-    flex-direction: row;
-    padding: relative;
-    height: 60%;
+    height: 50%;
 }
 .side_by_side>figure
 {
@@ -23,12 +20,12 @@
 
 #pic_side h1
 {
-    font-size: 5em;
+    font-size: 5vw;
     font-family: "Helvetica Neue", "Helvetica";
 }
 #pic_side span
 {
-    font-size: 1.7em;
+    font-size: 1.7vw;
     font-style: italic;
     font-family: "times new roman";
     color: var(--silver);
@@ -71,4 +68,36 @@
     margin-bottom: 2%;
     font-family: "Poppins", "sans-serif";
 }
-
+@media only screen and (max-width: 1200px)
+{
+    #main_photo
+    {
+        width: 100%;
+        margin-top: 20%;
+        left: 0%;
+        z-index: -2;
+    }
+    #pic_side
+    {
+        background-color: transparent;
+        border: 1px solid black;
+        width: 100%;
+        height: 50%;
+        color: white;
+        position: fixed;
+        z-index: -1;
+    }
+    #pic_side div h1
+    {
+        font-size: 4em;
+    }
+    #pic_side div span
+    {
+        color: white;
+        font-size: 2em;
+    }
+    #about
+    {
+        font-size: 1.5em;
+    }
+}
